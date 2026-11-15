@@ -1,1 +1,37 @@
 /* TODO: build .site-header and .nav with Flexbox to match the mockup */
+.site-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 60px;
+  padding: 0 10px;
+  background-color: #111827;
+  color: #d1d5db;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #d1d5db;
+  text-decoration: none;
+}
+
+header {
+  background: #ffffff;
+}
+
+body {
+  background: #f7f7f8;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+p {
+  padding-top: 40px;
+}
