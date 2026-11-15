@@ -1,1 +1,61 @@
 /* TODO: build .product-grid with CSS Grid to match the mockup */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f8;
+  color: #1a1a1a;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  min-height: 10vh;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card {
+  display: grid;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  gap: 5px;
+  padding: 24px;
+  background: #ffffff;
+}
+
+.img-placeholder {
+  display: grid;
+  width: 75%;
+  height: 90px;
+  border: 1px solid #d0e4ff;
+  border-radius: 10%;
+  padding: 10px 20px;
+  background: #d0e4ff;
+}
+button {
+  width: 100%;
+  border: 2px solid #1a1a1a;
+  padding: 10px 30px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+  background: #1f2937;
+}
+
+.product-price {
+  color: #1865d1;
+  font-weight: bold;
+}
+
+.product-name {
+  font-size: small;
+}
+/* 
+## Palette
+- Background: `#f7f7f8`
+- Card background: `#ffffff`
+- Text: `#1a1a1a`
+- Secondary text: `#1f2937`
+- Border: `#e5e7eb`
+- Accent/button: `#2563eb` */
