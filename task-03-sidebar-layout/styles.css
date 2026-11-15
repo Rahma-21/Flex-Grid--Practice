@@ -1,1 +1,49 @@
 /* TODO: build .app-shell, .sidebar and .main-content with Flexbox to match the mockup */
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f8;
+  margin: 0;
+}
+.app-shell {
+  display: flex;
+  color: #d1d5db;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 200px;
+  justify-content: start;
+  box-sizing: border-box;
+  background: #111827;
+  gap: 10px;
+  padding-left: 20px;
+  height: 900px;
+}
+
+nav a {
+  color: #d1d5db;
+  text-decoration: none;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #f7f7f8;
+  color: #1a1a1a;
+  padding-left: 40px;
+}
+
+.logo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+/* ## Palette
+- Background: `#f7f7f8`
+- Sidebar/card background: `#ffffff`
+- Text: `#1a1a1a`
+- Secondary text/border: `#d1d5db`
+- Dark text accent: `#111827` */
