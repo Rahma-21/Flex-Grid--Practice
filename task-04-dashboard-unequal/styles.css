@@ -1,1 +1,59 @@
 /* TODO: build .dashboard with CSS Grid and grid-template-areas to match the mockup */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f8;
+  color: #1a1a1a;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "chart user sessions"
+    "chart conversion average";
+  gap: 10px;
+  height: 320px;
+  margin: 20px;
+}
+.chart-panel {
+  grid-area: chart;
+}
+.stat-users {
+  grid-area: user;
+}
+.stat-sessions {
+  grid-area: sessions;
+}
+.stat-conversion {
+  grid-area: conversion;
+}
+.stat-average {
+  grid-area: average;
+}
+
+.panel {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 10px 30px 30px 30px;
+  /* margin: 10px 10px 0px 20px; */
+}
+
+.img-placeholder {
+  width: 100%;
+  height: 260px;
+  background: #93c5fd;
+  border: 1px solid#93c5fd;
+  border-radius: 8px;
+}
+
+h3 {
+  color: #6b7280;
+}
+
+p {
+  font-weight: bold;
+  font-size: 30px;
+}
