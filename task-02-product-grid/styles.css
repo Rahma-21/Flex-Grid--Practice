@@ -8,10 +8,7 @@ body {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  /* min-height: 10px; */
   padding: 24px;
-  display: flex;
-  justify-content: space-between;
   gap: 20px;
 }
 
@@ -20,18 +17,16 @@ body {
   border: 1px solid #e5e7eb;
   border-radius: 10px;
   gap: 5px;
-  padding: 24px 24px 5px 25px;
+  padding: 16px;
   background: #ffffff;
-  width: 45%;
 }
 
 .img-placeholder {
   display: grid;
-  width: 85%;
-  height: 120px;
+  width: 100%;
+  height: 136px;
   border: 1px solid #d0e4ff;
-  border-radius: 10px;
-  padding: 10px 20px;
+  border-radius: 8px;
   background: #d0e4ff;
 }
 button {
@@ -57,11 +52,3 @@ button {
   padding: 5px;
   margin: 0;
 }
-/* 
-## Palette
-- Background: `#f7f7f8`
-- Card background: `#ffffff`
-- Text: `#1a1a1a`
-- Secondary text: `#1f2937`
-- Border: `#e5e7eb`
-- Accent/button: `#2563eb` */
