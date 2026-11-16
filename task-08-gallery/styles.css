@@ -1,1 +1,61 @@
 /* TODO: build .gallery with CSS Grid to match the mockup */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f8;
+  color: #1a1a1a;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.gallery-item {
+  height: 100px;
+  border-radius: 10px;
+}
+
+.wide {
+  grid-column: span 2;
+  height: 100%;
+}
+.tall {
+  grid-row: span 2;
+  height: 100%;
+}
+
+.gallery-item:nth-child(1) {
+  background: linear-gradient(135deg, #fbcfe8, #f9a8d4);
+}
+.gallery-item:nth-child(2) {
+  background: linear-gradient(135deg, #bfdbfe, #93c5fd);
+}
+.gallery-item:nth-child(3) {
+  background: linear-gradient(135deg, #bbf7d0, #86efac);
+}
+.gallery-item:nth-child(4) {
+  background: linear-gradient(135deg, #fbcfe8, #f9a8d4);
+}
+.gallery-item:nth-child(5) {
+  background: linear-gradient(135deg, #fde68a, #fcd34d);
+}
+.gallery-item:nth-child(6) {
+  background: linear-gradient(135deg, #ddd6fe, #c4b5fd);
+}
+.gallery-item:nth-child(7) {
+  background: linear-gradient(135deg, #fecaca, #fca5a5);
+}
+.gallery-item:nth-child(8) {
+  background: linear-gradient(135deg, #a7f3d0, #6ee7b7);
+}
+.gallery-item:nth-child(9) {
+  background: linear-gradient(135deg, #fed7aa, #fdba74);
+}
