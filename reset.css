@@ -1,0 +1,51 @@
+/* Reset CSS */
+
+/* Remove default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set default font */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Remove default list styles */
+/* ul,
+ol {
+  list-style: none;
+} */
+
+/* Remove default link styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts in form elements */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove default button styling */
+button {
+  cursor: pointer;
+  border: none;
+}

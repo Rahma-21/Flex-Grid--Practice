@@ -8,27 +8,29 @@ body {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  min-height: 10vh;
-  padding: 20px 20px;
+  /* min-height: 10px; */
+  padding: 24px;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .product-card {
   display: grid;
   border: 1px solid #e5e7eb;
-  border-radius: 8px;
+  border-radius: 10px;
   gap: 5px;
-  padding: 24px;
+  padding: 24px 24px 5px 25px;
   background: #ffffff;
+  width: 45%;
 }
 
 .img-placeholder {
   display: grid;
-  width: 75%;
-  height: 90px;
+  width: 85%;
+  height: 120px;
   border: 1px solid #d0e4ff;
-  border-radius: 10%;
+  border-radius: 10px;
   padding: 10px 20px;
   background: #d0e4ff;
 }
@@ -46,10 +48,14 @@ button {
 .product-price {
   color: #1865d1;
   font-weight: bold;
+  padding: 0 0 5px 0;
+  margin: 0;
 }
 
 .product-name {
-  font-size: small;
+  font-size: 20px;
+  padding: 5px;
+  margin: 0;
 }
 /* 
 ## Palette
