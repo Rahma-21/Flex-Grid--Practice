@@ -1,1 +1,88 @@
 /* TODO: build .page-layout to match the mockup */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #1a1a1a;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr 240px;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header header"
+    "nav main side"
+    "footer footer footer";
+
+  min-height: 100vh;
+}
+
+.site-header {
+  grid-area: header;
+}
+
+.side-nav {
+  grid-area: nav;
+}
+
+.content {
+  grid-area: main;
+}
+.sidebar {
+  grid-area: side;
+}
+.site-footer {
+  grid-area: footer;
+}
+
+.page-layout {
+  height: 300px;
+}
+
+.site-header {
+  display: grid;
+  align-items: center;
+  color: #ffffff;
+  background: #111827;
+  font-weight: bold;
+  padding: 15px 20px 20px 30px;
+}
+
+.side-nav {
+  display: grid;
+  height: 130px;
+  padding: 10px 0 0 15px;
+}
+
+.side-nav a {
+  color: #374151;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sidebar {
+  color: #374151;
+  padding: 15px;
+}
+.content {
+  background: #ffffff;
+  padding: 0px 30px 30px 30px;
+}
+
+.site-footer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background: #111827;
+  padding: 15px 20px 20px 30px;
+}
+
+/* ## Palette
+- Background: `#f3f4f6`
+- Header/footer/content background: `#ffffff`
+- Text: `#1a1a1a`
+- Secondary text: `#374151`
+- Muted text: `#6b7280` / `#9ca3af`
+- Dark text accent: `#111827` */
